@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(235, 132, 132);
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+main{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "itema itema itemb"
+    "itemc itemd itemd"
+    "itemc iteme iteme";
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    grid-template-rows: 200px .8fr 1fr;
+    grid-template-columns: 300px .4fr;
+}
+main div{
+    text-align: center;
+    padding: 2em;
+    border-radius: 5px;
+}
+.itema{
+    background-color: orange;
+    grid-area: itema;
+}
+.itemb{
+    background-color: gray;
+    grid-area: itemb;
+}
+.itemc{
+    background-color: green;
+    grid-area: itemc;
+}
+.itemd{
+    background-color: blue;
+    grid-area: itemd;
+}
+.iteme{
+    background-color: blue;
+    grid-area: iteme;
+}
